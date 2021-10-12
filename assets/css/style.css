@@ -1,0 +1,71 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+h1 {
+    font-size: 2.8rem;
+}
+h2 {
+    font-size: 2.4rem;
+}
+.btn {
+    border-radius: 15rem;
+    padding: .375rem 1.5rem;
+}
+.btn-primary {
+    background: #4636FF;
+    border-color: #4636FF;
+}
+.btn-secondary {
+    background: #D53886;
+    border-color: #D53886;
+}
+.text-primary {
+    color: #4636FF!important;
+}
+.text-secondary {
+    color: #D53886!important;
+}
+
+header {
+    color: #000;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #000;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+.navbar-nav .nav-item:last-child .nav-link {
+    padding-right: 0;
+}
+#hero {
+    background: -webkit-image-set( url('../img/header.png') 1x, 
+    url('../img/header@2x.png') 2x );
+    padding-top: 15rem;
+    padding-bottom: 16rem;
+}
+#hero h1 {
+    font-weight: 300;
+    font-size: 2.8rem;
+}
+#hero h2 {
+    border: 2px solid #D53886;
+    border-radius: 1rem;
+    font-weight: 400;
+    font-size: 2.3rem;
+}
+#hero p {
+    font-weight: 300;
+    font-size: 1.3rem;
+}
+
+.blurbs {
+    margin-top: -7rem;
+}
+.blurbs img {
+    max-width: 180px;
+    margin: auto;
+    margin-top: -30%;
+}
