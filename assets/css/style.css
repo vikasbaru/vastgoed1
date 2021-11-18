@@ -9,6 +9,9 @@ h2 {
     font-weight: bold;
     margin-bottom: 1rem;
 }
+h5{
+    font-weight: bold;
+}
 h6 {
     color: #000;
     font-weight: bold;
@@ -370,9 +373,9 @@ footer h6 {
     min-width: 90px;
 }
 .gratis{
-    position: absolute;
-    top: 50%;
-    right: 1%;
+    right: 0.5rem;
+    bottom: 0.5rem;
+    left: auto;
 }
 .gratis a{
     width: 100px;
@@ -382,6 +385,39 @@ footer h6 {
     align-items: center;
     line-height: 1;
     font-size: 1.2rem;
+}
+
+.cats .nav-link {
+    color: rgba(0, 0, 0, 0.4);
+    border-bottom: 2px solid;
+    padding: 0;
+    margin: 0 1rem;
+    line-height: 2.5;
+    font-weight: bold;
+}
+.cats .nav-link.disabled {
+    color: #000;
+    border: none;
+}
+.cats .nav-link.active {
+    color: #D53886;
+}
+.cat {
+    border-radius: 0.5rem;
+}
+.cat .card-img, .card-img-top {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+.cat .det {
+    font-size: 0.8rem;
+    color: #443DF5;
+}
+.cat hr {
+    background-color: #7b7b7b;
+}
+.cat h4 {
+    font-weight: bold;
 }
 
 @media (max-width: 1399px) {
