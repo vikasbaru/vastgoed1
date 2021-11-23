@@ -43,6 +43,10 @@ h6 {
 header {
     color: #000;
 }
+
+#main-nav {
+    background: transparent linear-gradient(90deg, #1B18B1 0%, #773A83 100%) 0% 0% no-repeat padding-box;
+}
 .navbar-light .navbar-nav .nav-link {
     color: #000;
 }
@@ -412,6 +416,9 @@ footer h6 {
 .cat .det {
     font-size: 0.8rem;
     color: #443DF5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .cat hr {
     background-color: #7b7b7b;
