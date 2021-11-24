@@ -16,6 +16,9 @@ h6 {
     color: #000;
     font-weight: bold;
 }
+a {
+    color: #D53886;
+}
 .btn {
     border-radius: 15rem;
     padding: .375rem 1.5rem;
@@ -25,6 +28,14 @@ h6 {
     border-color: #4636FF;
 }
 .btn-secondary {
+    background: #D53886;
+    border-color: #D53886;
+}
+.btn-outline-secondary {
+    border-color: #D53886;
+    color: #D53886;
+}
+.btn-outline-secondary:hover {
     background: #D53886;
     border-color: #D53886;
 }
@@ -419,12 +430,163 @@ footer h6 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
 }
 .cat hr {
     background-color: #7b7b7b;
 }
 .cat h4 {
     font-weight: bold;
+}
+.owl-carousel .owl-item img {
+    width: auto;
+}
+.car-nav .owl-carousel .owl-stage-outer {
+    height: calc(100% + 30px);
+    margin: -15px;
+    padding: 15px;
+    width: calc(100% + 30px);
+}
+.car-nav .owl-carousel .owl-next,
+.car-nav .owl-carousel .owl-prev {
+    position: absolute;
+    font-size: 5rem!important;
+    color: #D53886!important;
+    top: calc(50% - 5rem);
+    background: transparent!important;
+}
+.car-nav .owl-carousel .owl-prev {
+    left: -50px;
+}
+.car-nav .owl-carousel .owl-next {
+    right: -50px;
+}
+
+.breads .breadcrumb-item.active {
+    color: #00132F;
+}
+.breads a {
+    text-decoration: none;
+    color: #1B0EB9;
+}
+.showcase {
+    background: #EDEDF7;
+}
+.showcase a {
+    text-decoration: none;
+}
+.showcase h1 {
+    font-weight: bold;
+}
+.sale {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#6e3789+0,221bae+100 */
+    background: #6e3789; /* Old browsers */
+    background: -moz-linear-gradient(left,  #6e3789 0%, #221bae 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  #6e3789 0%,#221bae 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  #6e3789 0%,#221bae 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6e3789', endColorstr='#221bae',GradientType=1 ); /* IE6-9 */
+    color: #fff;
+    padding: 0.7rem 1rem;
+    font-size: 0.8rem;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    vertical-align: middle;
+    border-radius: 10px 0 10px 0;
+}
+.sale img {
+    display: inline-block!important;
+}
+.video-img:after {
+    content: '';
+    width: 40px;
+    height: 40px;
+    background: url(../img/play.svg) no-repeat;
+    background-size: cover;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-top: -10px;
+    margin-left: -20px;
+}
+.text-fade {
+    position: relative;
+}
+.text-fade:after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    height: 80px;
+    width: 100%;
+    background: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.9));
+}
+.hr-light {
+    background-color: #999;
+}
+.list-tick li {
+    position: relative;
+    padding-left: 35px;
+
+}
+.list-tick li::before {
+    content: '';
+    width: 24px;
+    height: 24px;
+    background: url(../img/tick.png) no-repeat;
+    background-size: contain;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 4px;
+}
+.content {
+    line-height: 1.7;
+}
+.side-form input.form-control {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-radius: 0;
+    padding-left: 0;
+}
+.side-form .form-check-input[type=checkbox] {
+    border-color: #4636FF;
+}
+.d-badge {
+    background: url(../img/d-green-back.svg) no-repeat top right;
+    display: inline-block;
+    position: absolute;
+    right: -27px;
+    top: 36%;
+    padding-top: 30px;
+    color: #fff;
+    text-align: center;
+}
+.d-badge h4 {
+    background: url(../img/d-green.svg) no-repeat;
+    background-size: cover;
+    padding: 10px 35px;
+    margin-bottom: 0;
+}
+.d-badge h4 span {
+    display: block;
+    font-size: 70%;
+}
+.d-lgreen {
+    background: url(../img/d-lgreen-back.svg) no-repeat top right;
+}
+.d-lgreen h4 {
+    background: url(../img/d-lgreen.svg) no-repeat;
+    background-size: cover;
+}
+.d-yellow {
+    background: url(../img/d-yellow-back.svg) no-repeat top right;
+}
+.d-yellow h4 {
+    background: url(../img/d-yellow.svg) no-repeat;
+    background-size: cover;
 }
 
 @media (max-width: 1399px) {
@@ -455,9 +617,7 @@ footer h6 {
     .right-two:after {
         width: 270px;
     }
-    .navbar-collapse {
-        background: #4636FF;
-    }
+   
 }
 @media (max-width: 1199px) {
     .mbp {
@@ -490,6 +650,9 @@ footer h6 {
     .right-two:after {
         width: 230px;
     }
+    .d-badge {
+        top: 44%;
+    }
 }
 @media (min-width: 991px) {
     .mt-n2rem {
@@ -500,6 +663,9 @@ footer h6 {
     }
 }
 @media (max-width: 991px) {
+    .navbar-nav {
+        background-color: #D53886;
+    }
     #hero {
        padding-bottom: 5rem;
     }
@@ -544,6 +710,17 @@ footer h6 {
     #topbar {
         display: none;
     }
+    .d-badge {
+        top: 34%;
+    }
+}
+@media (max-width: 767px) {
+    .d-badge {
+        top: 49%;
+    }
+    .car-nav .owl-carousel .owl-nav {
+        display: none;
+    }
 }
 
 @media (max-width: 575px) {
@@ -555,6 +732,9 @@ footer h6 {
        width: auto;
    }
    .blurbs .card .tick-list li {
-    width: 70%;
-}
+        width: 70%;
+    }
+    .d-badge {
+        top: 43%;
+    }
 }
