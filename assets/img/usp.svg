@@ -1,0 +1,10 @@
+<svg id="unique_selling_point" data-name="unique selling point" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#1b18b1"/>
+      <stop offset="1" stop-color="#773a83"/>
+    </linearGradient>
+  </defs>
+  <path id="Path_211" data-name="Path 211" d="M15,0A15,15,0,1,1,0,15,15,15,0,0,1,15,0Z" fill="url(#linear-gradient)"/>
+  <path id="check_2_" data-name="check (2)" d="M12.071,6,6.522,11.549,4,9.027" transform="translate(6.538 6.295)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+</svg>

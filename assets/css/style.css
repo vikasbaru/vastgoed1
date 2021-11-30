@@ -45,6 +45,43 @@ a {
 .text-secondary {
     color: #D53886!important;
 }
+.bg-primary {
+    background: #4636FF!important;
+}
+.bg-dark {
+    background: #1B0EB9!important;
+}
+.bg-secondary {
+    background: #D53886!important;
+}
+.bg-gradient {
+    background: transparent linear-gradient(90deg, #1B18B1 0%, #773A83 100%) 0% 0% no-repeat padding-box!important;
+}
+.bg-info {
+    background: #E0EAFD!important;
+}
+.bg-light {
+    background: #EDEDF7!important;
+}
+.bg-gray {
+    background: #7B7B7B!important;
+}
+.rounded-4 {
+    border-radius: 0.5rem;
+}
+.form-check-input[type=checkbox] {
+    border-radius: 0;
+}
+.form-check-input:checked {
+    background-color: #fff;
+    border-color: #443DF5;
+}
+.form-check-input:checked[type=radio] {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23443DF5'/%3e%3c/svg%3e");
+}
+.form-check-input:checked[type=checkbox] {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23443DF5' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
+}
 .text-semi-dark {
     color: #747373;
 }
@@ -489,8 +526,6 @@ footer h6 {
     padding: 0.7rem 1rem;
     font-size: 0.8rem;
     display: inline-block;
-    margin-bottom: 10px;
-    margin-left: 10px;
     vertical-align: middle;
     border-radius: 10px 0 10px 0;
 }
