@@ -42,6 +42,12 @@ a {
 .text-primary {
     color: #4636FF!important;
 }
+.text-blue {
+    color: #1B0EB9!important;
+}
+.text-green {
+    color: #16BE00!important;
+}
 .text-secondary {
     color: #D53886!important;
 }
@@ -63,11 +69,25 @@ a {
 .bg-light {
     background: #EDEDF7!important;
 }
+.bg-medium {
+    background: #EEF3FE!important;
+}
 .bg-gray {
     background: #7B7B7B!important;
 }
 .rounded-4 {
     border-radius: 0.5rem;
+}
+.green-check-round .form-check-input[type=checkbox]{
+    border-radius: 50%;  
+}
+.green-check-round .form-check-input[type=checkbox]:focus{
+    border:none;
+    box-shadow:none;
+}
+.green-check-round .form-check-input:checked {
+    background-color: #16BE00;
+    border-color: #16BE00;
 }
 .form-check-input[type=checkbox] {
     border-radius: 0;
@@ -76,12 +96,16 @@ a {
     background-color: #fff;
     border-color: #443DF5;
 }
+.green-check-round .form-check-input:checked[type=checkbox] {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
+}
 .form-check-input:checked[type=radio] {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23443DF5'/%3e%3c/svg%3e");
 }
 .form-check-input:checked[type=checkbox] {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23443DF5' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
 }
+
 .text-semi-dark {
     color: #747373;
 }
@@ -623,8 +647,200 @@ footer h6 {
     background: url(../img/d-yellow.svg) no-repeat;
     background-size: cover;
 }
+.mw-611{
+    max-width: 611px;
+}
+.h-750{
+    height:750px;
+}
+.mt-550{
+    margin-top: -550px;
+}
+#progressbar {
+    margin-bottom: 30px;
+    overflow: hidden;
+    counter-reset: step;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+#progressbar:before{
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: #ccc;
+    position: absolute;
+    /* left: -50%; */
+    top: 10px;
+}
+#progressbar li {
+    list-style-type: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 9px;
+   display: flex;
+    float: left;
+    position: relative;
+    background-color: #fff;
+    padding: 0px 10px;
+    align-items: center;
+}
+#progressbar li.active:before, #progressbar li.active:after {
+    background: #16BE00;
+    color: white;
+}
+#progressbar li.active img{
+    position: absolute;
+    top: 3px;
+    width: 15px;
+    left: 3px;
+}
 
+#progressbar li.active:before{
+    content:',';
+    background-position: center;
+    font-size: 0px;
+    width: 20px;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
+    
+}
+#progressbar li h6{
+    font-size: 15px;
+}
+#progressbar li:before {
+    content: counter(step);
+    counter-increment: step;
+    width: 20px;
+   height:20px;
+    line-height: 20px;
+    display: block;
+    font-size: 10px;
+    color: #fff;
+    background: #1B0EB9;
+    border-radius: 10px;
+   
+    text-align: center;
+}
+.alert-form input{
+    border:1px solid #A19DFA;
+}
+.form-check-custom{
+    border-radius: 3px;
+    border:1px solid #443DF599;
+    columns:3;
+}
+.tick-list.green-tick li:before{
+    border-color: #16BE00;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    margin-right: 1rem;
+    width: 12px;
+    display: inline-block;
+    height: 20px;
+    transform: rotate(45deg);
+}
+
+.left-bar {
+    height: 100%;
+    max-width: 275px;
+    width: 100%;
+    background: transparent linear-gradient(
+180deg, #1B18B1 0%, #773A83 100%) 0% 0% no-repeat padding-box;
+   
+    background-repeat: no-repeat;
+    background-position: center;
+    position: fixed;
+    z-index: 99;
+    background-size: cover;
+}
+.mw-100p{
+    max-width: 100px!important;
+}
+.number-list{
+    padding-left: 0px;
+    counter-reset: step;
+    display: flex;
+    flex-direction: column;
+}
+.number-list li{
+    list-style-type: none;
+    color: #000;
+    
+   
+    display: flex;
+    float: left;
+    position: relative;
+    background-color: #fff;
+    padding: 0px 0px;
+    align-items: center;
+   
+}
+.number-list li:before {
+    content: counter(step);
+    counter-increment: step;
+    width: 20px;
+    margin-right: 10px;
+    height: 20px;
+    line-height: 20px;
+    display: block;
+    font-size: 10px;
+    color: #fff;
+    background: #D53886;
+    border-radius: 50%;
+    text-align: center;
+}
+.m-m-footer{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+.left-bar hr {
+    background-color: #7b7b7b;
+    opacity: inherit;
+}
+.mobile-menu ul li{
+    list-style: none;
+}
+.mobile-menu ul li a{
+    font-size: 17px;
+    color: #fff;
+    position: relative;
+    padding: 0.5rem 2.5rem;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-left: 5px solid transparent;
+}
+.mobile-menu ul li a:hover, .mobile-menu ul li a.active{
+    background-color: #4636FF;
+    border-left:5px solid #D53886;
+}
+.mobile-menu ul li a img{
+    position: absolute;
+    left:1rem;
+    max-width: 15px;
+    width: 100%;
+}
+.bg-watermerk{
+    background-image: url(../img/watermerk.png);
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #EEF3FE;
+}
 @media (max-width: 1399px) {
+    #progressbar li h6{
+        font-size: 10px;
+    }
+    #progressbar{
+        max-width:100%;
+        padding-left: 0px;
+    }
     .middle-one {
         max-width: 670px;
     }
@@ -750,6 +966,19 @@ footer h6 {
     }
 }
 @media (max-width: 767px) {
+    #progressbar{
+        flex-direction: column;
+    }
+    #progressbar li{
+        padding-left: 0px;
+        margin-bottom: 20px;
+    }
+    #progressbar li h6{
+        font-size: initial;
+    }
+    .form-check-custom{
+        columns: 2;
+    }
     .d-badge {
         top: 49%;
     }
@@ -759,6 +988,9 @@ footer h6 {
 }
 
 @media (max-width: 575px) {
+    .form-check-custom{
+        columns: 1;
+    }
    html {
        font-size: 14px;
    }
