@@ -21,6 +21,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://rawgit.com/LeshikJanz/libraries/master/Bootstrap/baguetteBox.min.css">
     <!-- Custom CSS -->
     <link href="assets/css/style.css" rel="stylesheet">
 
@@ -198,27 +199,33 @@
                         </ul>
                     </div>
                 </div>
+                </div>
+                <div class="container-fluid px-0 overflow-hidden">
+                <div class="tz-gallery">
                 <div class="row g-2 mb-2">
                     <div class="col-lg-6">
-                        <a href=""><img src="assets/img/main.jpg" class="img-fluid mb-2" alt=""></a>
+                        <a class="lightbox" href="assets/img/main.jpg"><img src="assets/img/main.jpg" class="img-fluid w-100 mb-2" alt=""></a>
                     </div>
                     <div class="col-lg-6">
                         <div class="row g-2">
                             <div class="col-lg-6">
-                                <a href="" class="video-img position-relative"><img src="assets/img/small.jpg" class="img-fluid" alt=""></a>
+                                <a  href="assets/img/small.jpg" class="video-img position-relative lightbox"><img src="assets/img/small.jpg" class=" w-100 img-fluid" alt=""></a>
                             </div>
                             <div class="col-lg-6">
-                                <a href=""><img src="assets/img/small.jpg" class="img-fluid" alt=""></a>
+                                <a class="lightbox" href="assets/img/small.jpg"><img src="assets/img/small.jpg" class="img-fluid  w-100" alt=""></a>
                             </div>
                             <div class="col-lg-6">
-                                <a href=""><img src="assets/img/small.jpg" class="img-fluid" alt=""></a>
+                                <a class="lightbox" href="assets/img/small.jpg"><img src="assets/img/small.jpg" class="img-fluid  w-100" alt=""></a>
                             </div>
                             <div class="col-lg-6">
-                                <a href=""><img src="assets/img/small.jpg" class="img-fluid" alt=""></a>
+                                <a href="assets/img/small.jpg" class="lightbox"><img src="assets/img/small.jpg" class="img-fluid  w-100" alt=""></a>
                             </div>
                         </div>
                     </div>
                 </div>
+                </div>
+                </div>
+                <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
                         <ul class="list-inline text-primary pt-2 text-center text-md-start">
@@ -246,6 +253,7 @@
                         </div>
                     </div>
                 </div>
+                
             </div>
         </section><!-- .showcase -->
 
@@ -648,9 +656,11 @@
         crossorigin="anonymous"></script>
     <!-- Owl Carousel -->
     <script src="vendor/owlcarousel/dist/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
     <script>
+       
         $(document).ready(function () {
-
+            baguetteBox.run('.tz-gallery');
             $(".slider1").owlCarousel({
                 margin: 30,
                 dots: false,

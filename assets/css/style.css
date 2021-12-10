@@ -833,6 +833,7 @@ footer h6 {
     background-size: contain;
     background-color: #EEF3FE;
 }
+
 @media (max-width: 1399px) {
     #progressbar li h6{
         font-size: 10px;
