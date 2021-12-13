@@ -744,7 +744,10 @@ footer h6 {
     height: 20px;
     transform: rotate(45deg);
 }
-
+.sidebar-dark{
+    background: transparent linear-gradient(
+        180deg, #1B18B1 0%, #773A83 100%) 0% 0% no-repeat padding-box;
+}
 .left-bar {
     height: 100%;
     max-width: 275px;
@@ -754,7 +757,7 @@ footer h6 {
    
     background-repeat: no-repeat;
     background-position: center;
-    position: fixed;
+    
     z-index: 99;
     background-size: cover;
 }
@@ -777,7 +780,9 @@ footer h6 {
     position: relative;
     background-color: #fff;
     padding: 0px 0px;
+    padding-left: 30px;
     align-items: center;
+   
    
 }
 .number-list li:before {
@@ -793,6 +798,9 @@ footer h6 {
     background: #D53886;
     border-radius: 50%;
     text-align: center;
+    top: 5px;
+    position: absolute;
+    left: 0;
 }
 .m-m-footer{
     position: absolute;
@@ -825,15 +833,111 @@ footer h6 {
     left:1rem;
     max-width: 15px;
     width: 100%;
+    top: 13px;
 }
 .bg-watermerk{
     background-image: url(../img/watermerk.png);
-    background-position: 100% 50%;
+    background-position: right bottom;
     background-repeat: no-repeat;
-    background-size: contain;
-    background-color: #EEF3FE;
+    background-size: 500px;
+    background-color: #EEF3FE!important;
+}
+.toggled .profile{
+    flex-direction: column;
+}
+.toggled .m-m-footer{
+    font-size: 10px;
+    text-align: center;
+}
+.toggled .profile .text-white{
+    margin-left: 0px!important;
+}
+.toggled li.p-5{
+    padding: 1rem !important;;
+}
+.topbar #sidebarToggleTop{
+    align-items: center;
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+    padding: 0;
+    text-decoration: none;
+}
+.topbar #sidebarToggleTop:hover{
+    text-decoration: none;
+}
+.toggled .mobile-menu li a{
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0.5rem 0.5rem;
+
+
+}
+.toggled .mobile-menu li a img{
+    position: inherit;
+    left: inherit;
+    top: inherit;
+}
+.toggled .profile h6{
+    font-size: 10px;
+    text-align: center;
+    margin-top: 10px;
+}
+.toggled .profile p{
+    font-size: 7px;
+    text-align: center;
+}
+/* gallery tab  */ 
+.gallery-tabs a {
+    color: rgb(0,113,179)
+}
+/* lightbox */
+html.a-html{
+    position: inherit;
+}
+body.a-body{
+    overflow: inherit;
+}
+/** LIGHTBOX MARKUP **/
+
+.lightbox1 {
+/* Default to hidden */
+display: none;
+
+/* Overlay entire screen */
+position: fixed;
+z-index: 999;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+
+/* A bit of padding around image */
+padding: 1em;
+
+/* Translucent background */
+background: rgba(0, 0, 0, 0.8);
 }
 
+/* Unhide the lightbox when it's the target */
+.lightbox1:target {
+display: block;
+}
+
+.lightbox1 span {
+/* Full width and height */
+display: block;
+width: 100%;
+height: 100%;
+
+/* Size and position background image */
+background-position: center;
+background-repeat: no-repeat;
+background-size: contain;
+}
 @media (max-width: 1399px) {
     #progressbar li h6{
         font-size: 10px;
@@ -871,6 +975,7 @@ footer h6 {
     }
    
 }
+
 @media (max-width: 1199px) {
     .mbp {
         font-size: 12px;
@@ -915,6 +1020,7 @@ footer h6 {
     }
 }
 @media (max-width: 991px) {
+    
     .navbar-nav {
         background-color: #D53886;
     }
@@ -966,7 +1072,51 @@ footer h6 {
         top: 34%;
     }
 }
+@media (min-width: 768px) {
+    .sidebar {
+        width: 18rem!important;
+    }
+}
 @media (max-width: 767px) {
+   
+    .navbar-nav li.p-5 {
+        padding: 1rem !important;
+    }
+    .m-m-footer{
+        font-size: 10px;
+    }
+    .bg-watermerk{
+        background-position: bottom;
+    }
+     .profile{
+        flex-direction: column;
+    }
+    .profile .text-white{
+        margin-left: 0px!important;
+    }
+    .mobile-menu ul li a{
+        font-size: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0.5rem 0.5rem;
+
+    }
+    .mobile-menu ul li a img{
+        position: inherit;
+        left: inherit;
+        top: inherit;
+    }
+    .profile h6{
+        font-size: 10px;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .profile p{
+        font-size: 7px;
+        text-align: center;
+    }
     #progressbar{
         flex-direction: column;
     }
