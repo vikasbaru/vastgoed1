@@ -21,7 +21,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://rawgit.com/LeshikJanz/libraries/master/Bootstrap/baguetteBox.min.css">
+    <!--<link rel="stylesheet" href="https://rawgit.com/LeshikJanz/libraries/master/Bootstrap/baguetteBox.min.css">-->
+     <!-- gallery CSS -->
+     <link href="assets/lumenbox/lumenbox.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="assets/css/style.css" rel="stylesheet">
 
@@ -200,46 +202,49 @@
                     </div>
                 </div>
                 </div>
-                <div class="container px-0 overflow-hidden">
+                <div class="container overflow-hidden">
                 <div class="tz-gallery">
                 <div class="row g-2 mb-2">
                     <div class="col-lg-6">
-                        <a class="lightbox" href="assets/img/main.jpg"><img src="assets/img/main.jpg" class="img-fluid w-100 mb-2" alt=""></a>
+                        <a class="lightbox example-image-link" href="assets/img/main.jpg"  data-lumenbox="my-gallery" ><img src="assets/img/main.jpg" class="img-fluid w-100 mb-2 example-image" alt="image-1"></a>
                     </div>
                     <div class="col-lg-6">
                         <div class="row g-2">
+                           <!-- <div class="col-lg-6">
+                                <a data-toggle="lightbox" data-gallery="my-gallery" href="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" class="video-img position-relative lightbox" ><img src="assets/img/small.jpg" class=" w-100 img-fluid" alt=""></a>
+                            </div>-->
                             <div class="col-lg-6">
-                                <a  href="assets/img/small.jpg" class="video-img position-relative lightbox"><img src="assets/img/small.jpg" class=" w-100 img-fluid" alt=""></a>
+                                <a class="lightbox example-image-link" href="assets/img/small.jpg"  data-lumenbox="my-gallery" ><img src="assets/img/small.jpg" class="img-fluid example-image  w-100" alt="image-2"></a>
                             </div>
                             <div class="col-lg-6">
-                                <a class="lightbox" href="assets/img/small.jpg"><img src="assets/img/small.jpg" class="img-fluid  w-100" alt=""></a>
+                                <a class="lightbox example-image-link" href="assets/img/small.jpg" data-lumenbox="my-gallery"><img src="assets/img/small.jpg" class="img-fluid example-image  w-100" alt=""></a>
                             </div>
                             <div class="col-lg-6">
-                                <a class="lightbox" href="assets/img/small.jpg"><img src="assets/img/small.jpg" class="img-fluid  w-100" alt=""></a>
+                                <a class="lightbox example-image-link" href="assets/img/small.jpg" data-lumenbox="my-gallery"><img src="assets/img/small.jpg" class="img-fluid example-image  w-100" alt=""></a>
                             </div>
                             <div class="col-lg-6">
-                                <a href="assets/img/small.jpg" class="lightbox"><img src="assets/img/small.jpg" class="img-fluid  w-100" alt=""></a>
+                                <a href="assets/img/small.jpg" class="lightbox example-image-link" data-lumenbox="my-gallery"><img src="assets/img/small.jpg" class="img-fluid example-image  w-100" alt=""></a>
                             </div>
                         </div>
                     </div>
-                </div>
-                </div>
+                 </div>
+              </div>
                 </div>
                 <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
-                        <ul class="list-inline text-primary pt-2 text-center text-md-start">
+                        <ul class="list-inline text-primary pt-2 text-center text-md-start gallery-tabs">
                             <li class="list-inline-item">
-                                <img src="assets/img/fotos.png" width="20px" alt=""> <span class="align-middle">Foto's 31</span>
+                                <a class="text-primary" href=""><img src="assets/img/fotos.png" width="20px" alt=""> <span class="align-middle">Foto's 31</span></a>
                             </li>
                             <li class="list-inline-item ms-2 ms-xl-3">
-                                <img src="assets/img/platte.png" width="20px" alt=""> <span class="align-middle">Plattegrond 5</span>
+                                <a class="text-primary" href=""><img src="assets/img/platte.png" width="20px" alt=""> <span class="align-middle">Plattegrond 5</span></a>
                             </li>
                             <li class="list-inline-item ms-2 ms-xl-3">
-                                <img src="assets/img/360.png" width="20px" alt=""> <span class="align-middle">360° foto’s 2</span>
+                               <a class="text-primary" href="app-files/index.html"> <img src="assets/img/360.png" width="20px" alt=""> <span class="align-middle">360° foto’s 2</span></a></li>
                             </li>
                             <li class="list-inline-item ms-2 ms-xl-3">
-                                <img src="assets/img/video.png" width="20px" alt=""> <span class="align-middle">Video 6</span>
+                                <a class="text-primary" href=""><img src="assets/img/video.png" width="20px" alt=""> <span class="align-middle">Video 6</span></a>
                             </li>
                         </ul>
                     </div>
@@ -268,7 +273,7 @@
                             the most sought-after design houses in London and represents an utterly unique opportunity
                             to own a globally significant property. The residence is comprised of 5 bedrooms, 2 master
                             bathrooms, 4 on-suite guest bathrooms, 2 powder rooms, 2 offices, 2 dressing rooms, a media
-                            room, an oversized eat-in gourmet chef’s kitchen, and a sprawling 1,100 square-foot Great
+                            room, an oversized eat-in gourmet chef&apos;s kitchen, and a sprawling 1,100 square-foot Great
                             Room perfectly situated in the prime southwest corner of the floor.</p>
                         <a href="#">Lees meer</a>
 
@@ -398,6 +403,9 @@
         <section class="map">
             <img src="assets/img/map.jpg" alt="" class="img-fluid">
         </section>
+      
+        
+            
 
         <section class="py-5 car-nav">
             <div class="container py-5">
@@ -654,9 +662,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous"></script>
+      
     <!-- Owl Carousel -->
     <script src="vendor/owlcarousel/dist/owl.carousel.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script> 
+    <script src="assets/js/bs5-lightbox.min.js"></script>-->
+    <script src="assets/js/lumenbox.min.js"></script>
+    <script>
+        var Lumenbox = new Lumenbox({
+          enableKeyboardNavigation: true,
+          showCounter: true
+        });
+      </script>
     <script>
        
         $(document).ready(function () {
@@ -680,6 +697,10 @@
                     },
                 },
             });
+
+           
+
+
         });
     </script>
 </body>

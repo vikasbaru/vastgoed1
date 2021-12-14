@@ -20,8 +20,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-     <!-- Custom styles for this template-->
-     <link href="assets/sb-admin/sb-admin-2.min.css" rel="stylesheet">
+    
 
     <!-- Custom CSS -->
     <link href="assets/css/style.css" rel="stylesheet">
@@ -32,7 +31,7 @@
 <body>
    
 <!-- Page Wrapper -->
-<div id="wrapper" class="bg-watermerk">
+<div id="wrapper" class="bg-watermerk d-flex">
 
     <!-- Sidebar -->
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion position-relative" id="accordionSidebar">
@@ -71,7 +70,7 @@
       
 
         <!-- Sidebar Toggler (Sidebar) -->
-        <div class="text-center d-none d-md-inline">
+        <div class="text-center d-none d-md-inline mb-5">
             <button class="rounded-circle border-0" id="sidebarToggle"></button>
         </div>
 
@@ -86,14 +85,23 @@
         <div id="content">
 
             <!-- Topbar -->
-            <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top py-0">
-                <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+            <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top breads py-3">
+                <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mx-3">
                     <i class="fa fa-bars"></i>
                 </button>
-                <ol class="breadcrumb mb-0 bg-transparent">
-                                
-                    <li class="breadcrumb-item active fw-bold" aria-current="page">Home</li>
-                </ol>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);"
+                                aria-label="breadcrumb">
+                                <ol class="breadcrumb mb-0">
+                                    
+                                    <li class="breadcrumb-item active fw-bold" aria-current="page">Home</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
             </nav>
             <!-- End of Topbar -->
 
@@ -108,7 +116,7 @@
                           </h1>
                          </div>
 
-                         <div class="container py-5">
+                         <div class=" py-5">
                             <div class="row">
                                <div class="col-lg-6 mb-5">
                                 <div class="card shadow border-0 p-5  h-100">
